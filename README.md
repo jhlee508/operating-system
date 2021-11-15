@@ -6,5 +6,5 @@
 - [x] Signaling 
 - [x] Message Queue
 - [X] Mutex
-- [ ] Semaphore
+- [X] Semaphore
 - [ ] Round-Robin Scheduling
