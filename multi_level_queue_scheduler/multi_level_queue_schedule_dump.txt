@@ -1,0 +1,87 @@
+
+[Run Status Process ENQUEUE]
+
+PID: 	10384
+Arrival Order: 	1
+Burst Time: 	4.00
+
+Priority: 	2
+
+PID: 	10385
+Arrival Order: 	2
+Burst Time: 	7.00
+
+Priority: 	2
+
+PID: 	10386
+Arrival Order: 	3
+Burst Time: 	18.00
+
+Priority: 	2
+
+PID: 	10387
+Arrival Order: 	4
+Burst Time: 	16.00
+
+Priority: 	1
+
+PID: 	10388
+Arrival Order: 	5
+Burst Time: 	14.00
+
+Priority: 	1
+
+
+[Process Execution Flow]
+
+>>> Context Switch #1 -> Running Process: P1 - PID[10384] - Burst time[4.00]
+
+>>> Context Switch #2 -> Running Process: P2 - PID[10385] - Burst time[7.00]
+
+>>> Context Switch #3 -> Running Process: P3 - PID[10386] - Burst time[18.00]
+
+>>> Context Switch #4 -> Running Process: P4 - PID[10387] - Burst time[16.00]
+
+>>> Context Switch #5 -> Running Process: P5 - PID[10388] - Burst time[14.00]
+
+>>> Context Switch #6 -> Running Process: P1 - PID[10384] - Burst time[4.00]
+
+>>> Context Switch #7 -> Running Process: P2 - PID[10385] - Burst time[7.00]
+
+>>> Context Switch #8 -> Running Process: P3 - PID[10386] - Burst time[18.00]
+
+>>> Context Switch #9 -> Running Process: P4 - PID[10387] - Burst time[6.00]
+
+>>> Context Switch #10 -> Running Process: P5 - PID[10388] - Burst time[4.00]
+
+>>> Context Switch #11 -> Running Process: P1 - PID[10384] - Burst time[4.00]
+
+>>> Context Switch #12 -> Running Process: P2 - PID[10385] - Burst time[7.00]
+
+>>> Context Switch #13 -> Running Process: P3 - PID[10386] - Burst time[18.00]
+
+RUN QUEUE Empty!
+
+
+[Multi-level Queue Scheduler]
+
+PID		Burst Time	Completion Time		Waiting Time	Priority
+
+10384		4.00		34.00			30.00			2
+
+10385		7.00		41.00			34.00			2
+
+10386		18.00		59.00			41.00			2
+
+10387		16.00		26.00			10.00			1
+
+10388		14.00		30.00			16.00			1
+
+>> Min Completion Time : 26.00
+>> MAX Completion Time : 59.00
+>> Average Completion Time : 38.00
+
+>> Min Waiting Time : 10.00
+>> MAX Waiting Time : 41.00
+>> Average Waiting Time : 26.20
+
