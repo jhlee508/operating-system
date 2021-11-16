@@ -1,0 +1,111 @@
+
+[Run Status Process ENQUEUE]
+
+PID: 	4595
+Arrival Order: 	1
+Burst Time: 	4.00
+
+PID: 	4596
+Arrival Order: 	2
+Burst Time: 	7.00
+
+PID: 	4597
+Arrival Order: 	3
+Burst Time: 	18.00
+
+PID: 	4598
+Arrival Order: 	4
+Burst Time: 	16.00
+
+PID: 	4599
+Arrival Order: 	5
+Burst Time: 	14.00
+
+PID: 	4600
+Arrival Order: 	6
+Burst Time: 	16.00
+
+PID: 	4601
+Arrival Order: 	7
+Burst Time: 	7.00
+
+PID: 	4602
+Arrival Order: 	8
+Burst Time: 	13.00
+
+PID: 	4603
+Arrival Order: 	9
+Burst Time: 	10.00
+
+PID: 	4604
+Arrival Order: 	10
+Burst Time: 	2.00
+
+
+[Process Execution Flow]
+
+>>> Context Switch #1 -> Running Process: P1 - PID[4595] - Burst time[4.00]
+
+>>> Context Switch #2 -> Running Process: P2 - PID[4596] - Burst time[7.00]
+
+>>> Context Switch #3 -> Running Process: P3 - PID[4597] - Burst time[18.00]
+
+>>> Context Switch #4 -> Running Process: P4 - PID[4598] - Burst time[16.00]
+
+>>> Context Switch #5 -> Running Process: P5 - PID[4599] - Burst time[14.00]
+
+>>> Context Switch #6 -> Running Process: P6 - PID[4600] - Burst time[16.00]
+
+>>> Context Switch #7 -> Running Process: P7 - PID[4601] - Burst time[7.00]
+
+>>> Context Switch #8 -> Running Process: P8 - PID[4602] - Burst time[13.00]
+
+>>> Context Switch #9 -> Running Process: P9 - PID[4603] - Burst time[10.00]
+
+>>> Context Switch #10 -> Running Process: P10 - PID[4604] - Burst time[2.00]
+
+>>> Context Switch #11 -> Running Process: P3 - PID[4597] - Burst time[8.00]
+
+>>> Context Switch #12 -> Running Process: P4 - PID[4598] - Burst time[6.00]
+
+>>> Context Switch #13 -> Running Process: P5 - PID[4599] - Burst time[4.00]
+
+>>> Context Switch #14 -> Running Process: P6 - PID[4600] - Burst time[6.00]
+
+>>> Context Switch #15 -> Running Process: P8 - PID[4602] - Burst time[3.00]
+
+RUN QUEUE Empty!
+
+
+[Round Robin Scheduler]
+
+PID		Burst Time	Completion Time		Waiting Time
+
+4595		4.00		4.00			0.00
+
+4596		7.00		11.00			4.00
+
+4597		18.00		88.00			70.00
+
+4598		16.00		94.00			78.00
+
+4599		14.00		98.00			84.00
+
+4600		16.00		104.00			88.00
+
+4601		7.00		58.00			51.00
+
+4602		13.00		107.00			94.00
+
+4603		10.00		78.00			68.00
+
+4604		2.00		80.00			78.00
+
+>> Min Completion Time : 4.00
+>> MAX Completion Time : 107.00
+>> Average Completion Time : 72.20
+
+>> Min Waiting Time : 0.00
+>> MAX Waiting Time : 94.00
+>> Average Waiting Time : 61.50
+
