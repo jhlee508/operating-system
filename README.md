@@ -7,4 +7,5 @@
 - [x] Message Queue
 - [X] Mutex
 - [X] Semaphore
-- [ ] Round-Robin Scheduling
+- [ ] Round-Robin Scheduler
+- [X] Multi-level Queue Scheduler
